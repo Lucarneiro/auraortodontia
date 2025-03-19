@@ -1,0 +1,82 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: linear-gradient(
+      90deg,
+      rgba(247, 220, 176, 0.34) 24.5%,
+      rgba(203, 164, 116, 0.38) 41%
+    ),
+    #cba474;
+  padding: 100px;
+  padding-left: 200px;
+  gap: 40px;
+}
+
+footer .infoFooter h2,
+.sitemap h2,
+.redessociais h2 {
+  font-size: 1.2rem;
+  gap: 30px;
+  text-transform: uppercase;
+  color: #f7f7f0;
+  font-family: "Poppins";
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+footer .infoFooter h2,
+footer .sitemap h2,
+footer .sitemap li {
+  margin: auto;
+}
+
+footer .infoFooter p {
+  font-family: "IBM Plex Mono";
+  color: #f7f7f0;
+  margin: auto;
+  font-size: 0.8rem;
+}
+
+footer .sitemap li {
+  color: #f7f7f0;
+  font-family: "IBM Plex Mono";
+  font-size: 0.9rem;
+}
+
+footer .sitemap li .i {
+  margin-left: 10px;
+}
+
+footer .redessociais h2 {
+  margin: auto;
+}
+
+footer .redessociais img {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .infoFooter h2,
+  .sitemap h2,
+  .redessociais h2 {
+    font-size: 1.2rem;
+  }
+
+  footer .infoFooter p,
+  .sitemap li {
+    font-size: 0.8rem;
+  }
+  footer .redessociais img {
+    width: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}

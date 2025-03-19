@@ -1,0 +1,67 @@
+/* botoes */
+
+.btnVerde {
+  background: #9c9e8c;
+  border: none;
+  border-radius: 3rem;
+  padding: 15px 35px;
+  font-family: "IBM Plex Mono";
+  color: #fcfbf8;
+  width: auto;
+  margin-top: 40px;
+}
+
+.btnVerde:hover {
+  background: #fcfbf8;
+  color: #9c9e8c;
+  transition: 0.3s;
+}
+
+.btnTransp {
+  border: solid 2px #a5a795;
+  background-color: transparent;
+  border-radius: 3rem;
+  font-family: "IBM Plex Mono";
+  color: #9c9e8c;
+  letter-spacing: 0.1rem;
+  width: auto;
+}
+
+.btnTransp:hover {
+  background-color: #a5a795;
+  color: #f5ede0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.titleSection {
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 2.78em;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 70px;
+  letter-spacing: 0.2rem;
+  color: #7e7f70;
+  grid-column: -1/1;
+}
+
+.titlePage {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: #7e7f50;
+  text-align: center;
+  padding-top: 35vh;
+}
+
+@media (max-width: 900px) {
+  .titlePage {
+    font-size: 5rem;
+  }
+  .titleSection {
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+}

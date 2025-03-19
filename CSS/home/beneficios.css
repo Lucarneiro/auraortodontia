@@ -1,0 +1,139 @@
+.beneficios {
+  background-color: #f7f7f0;
+  opacity: 0.9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.beneficios .h2Responsivo {
+  display: none;
+}
+
+.beneficios h2 {
+  grid-row: 3;
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 6rem;
+  font-size: 3.5rem;
+  padding-top: 100px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  letter-spacing: 0.2rem;
+  color: #7e7f70;
+  text-align: left;
+}
+
+.beneficios .imagens {
+  grid-row: 1;
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  border-radius: 4px;
+}
+
+.beneficios .listaBeneficios {
+  font-family: "IBM Plex Mono";
+  grid-row: 3;
+  margin-top: 40px;
+}
+
+.beneficios .listaBeneficios h3 {
+  font-family: "IBM Plex Mono";
+  grid-row: 3;
+  color: #7e7f70;
+  margin-top: 70px;
+}
+
+.beneficios .listaBeneficios .ben {
+  display: grid;
+  text-transform: uppercase;
+  color: #7e7f70;
+  margin-bottom: 15px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.beneficios .listaBeneficios .ben:first-child {
+  margin-top: 30px;
+}
+
+.beneficios .listaBeneficios .ben img {
+  width: 15px;
+  margin-right: 20px;
+}
+
+.beneficios .listaBeneficios .btnVerde {
+  font-size: 1.2rem;
+  margin-left: 0px;
+}
+
+.beneficios .listaBeneficios .btnVerde:hover {
+  background: #f5ede0;
+  color: #9c9e8c;
+  transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .beneficios .imagens {
+    display: none;
+  }
+
+  .beneficios h2 {
+    margin-top: -150px;
+  }
+  .beneficios .listaBeneficios .ben {
+    margin-top: 10px;
+  }
+  .beneficios .listaBeneficios .ben:first-child {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios .h2Responsivo {
+    display: inline-block;
+    grid-row: 1;
+    word-wrap: normal;
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: -50px;
+    letter-spacing: 0.2rem;
+    color: #7e7f70;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .beneficios h2 {
+    display: none;
+  }
+
+  .beneficios .listaBeneficios .ben {
+    display: grid;
+    text-transform: uppercase;
+    color: #7e7f70;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    max-width: 450px;
+  }
+
+  .beneficios .listaBeneficios .ben:first-child {
+    margin-top: 0px;
+  }
+  .beneficios .imagens {
+    display: none;
+  }
+  .beneficios .listaBeneficios .btnVerde {
+    font-size: 1.2rem;
+    margin-left: 50px;
+    margin-bottom: 70px;
+  }
+}

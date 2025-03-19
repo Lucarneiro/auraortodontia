@@ -1,0 +1,121 @@
+.box-faq .conteudo-inicial-faq img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.box-faq {
+  background-image: url("../fotos/gabi/filtro4.png");
+  object-fit: cover;
+  z-index: 1;
+  height: 90vh;
+}
+
+.box-faq .conteudo-inicial-faq .titulo {
+  font-family: "Poppins";
+  font-size: 8rem;
+  font-weight: 600;
+  color: #7e7f70;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #f3eadc;
+}
+
+.intro-faq .texto-intro-faq {
+  font-family: "IBM Plex Mono";
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 1.1rem;
+  color: #7e7f70;
+}
+
+.busca {
+  display: flex;
+  justify-self: center;
+}
+.input-busca {
+  content: "";
+  height: 50px;
+  width: 510px;
+  border-radius: 30px;
+  border: solid #7e7f70;
+  background-color: transparent;
+  margin-top: 40px;
+}
+
+.busca .icone {
+  height: 25px;
+  position: absolute;
+  margin-left: 15px;
+  color: #7e7f70;
+  margin-top: 55px;
+}
+
+.faq details {
+  list-style: none;
+  background-color: #f7f7f0;
+  border-radius: 0 6px 6px 0;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-right: 150px;
+}
+
+.faq details:first-child {
+  margin-top: 90px;
+}
+
+.faq details:last-child {
+  margin-bottom: 200px;
+}
+
+.faq details summary {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: 150px;
+  color: #7e7f70;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq details summary::after {
+  content: "+";
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  right: 300px;
+  font-size: 1.5rem;
+}
+
+details[open] summary::after {
+  rotate: 45deg;
+  right: 300px;
+}
+
+.faq details .resposta-faq {
+  font-family: "IBM Plex Mono";
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 250px;
+  color: #7e7f70;
+}
+
+.btnVerde {
+  font-size: 1.1rem;
+  margin-left: 155px;
+}
+
+.titulo-botao-faq {
+  color: #9c9e8c;
+  font-family: "IBM Plex Mono";
+  margin-left: 150px;
+  margin-top: 40px;
+}

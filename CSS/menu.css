@@ -1,0 +1,141 @@
+.divHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  background-color: #fffbf6;
+  align-items: center;
+  z-index: 1000;
+}
+.menu {
+  display: flex;
+  margin-right: 100px;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  gap: 70px;
+  font-family: "IBM Plex Mono";
+  font-size: 1rem;
+  transition: 0.3s;
+  color: #626249;
+}
+
+.menu ul .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.menu ul .item a {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul .item span {
+  margin-left: 8px;
+  color: #626249;
+}
+
+.menu ul .item > a:hover {
+  cursor: pointer;
+  color: #a67e41;
+  font-size: 1.03rem;
+  transition: 0.4s;
+}
+
+.logo-home {
+  height: 110px;
+  margin: 0 80px 0 100px;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  position: absolute;
+  left: -30px;
+  top: 100%;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 1;
+}
+
+.submenu li {
+  display: none;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 30px;
+  background-color: #fffbf6;
+  height: 60px;
+  width: 100%;
+}
+
+.submenu.active {
+  max-height: 300px;
+}
+
+.submenu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.submenu-toggle img {
+  transition: transform 0.3s ease;
+}
+
+.submenu-toggle.active img {
+  transform: rotate(180deg);
+}
+
+.submenu .subitem a {
+  color: #626249;
+  width: 100%;
+}
+
+.menu li:hover .submenu {
+  width: 420px;
+  gap: 1px;
+  transition: ease-out;
+}
+
+.menu li:hover .submenu .subitem {
+  display: block;
+  align-content: center;
+}
+
+.menu li:hover .submenu .subitem a {
+  font-size: 0.8rem;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+
+.menu li:hover .submenu .subitem a:hover {
+  color: #a67e41;
+  font-size: 0.82rem;
+}
+
+.menu li:hover > a {
+  display: flex;
+  background-color: #fffbf6;
+}
+
+@media (max-width: 1200px) {
+  .menu ul {
+    gap: 30px;
+    font-size: 1rem;
+    margin-right: 0px;
+    margin-left: 0;
+  }
+
+  .logo-home {
+    height: 110px;
+    margin: 0 20px 0 40px;
+  }
+}

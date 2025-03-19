@@ -1,0 +1,29 @@
+/* .endereco {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+  font-family: "IBM Plex Mono";
+  font-size: 0.1rem;
+  color: #f5ede0;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  background: #bbbcb6;
+}
+
+.endereco img {
+  margin-right: 7px;
+}
+
+.endereco p:first-child {
+  margin-right: 20px;
+}
+
+.endereco p {
+  margin-right: 50px;
+  font-size: 0.8rem;
+}
+.endereco p:last-child {
+  margin-right: 0;
+} */

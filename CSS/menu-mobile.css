@@ -1,0 +1,140 @@
+/* Estilo básico do menu */
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  /* Exibição do botão de menu no mobile */
+  [data-menu="button"] {
+    display: flex;
+    border: none;
+    background-color: #fffbf6;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    color: #a67e41;
+    cursor: pointer;
+    margin: 10px 10px;
+    align-items: center;
+    position: relative;
+    z-index: 300;
+  }
+
+  /* Estilo das "listras" (linhas) do ícone hamburguer */
+  [data-menu="button"]::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    height: 2px;
+    width: 20px;
+    background-color: #a67e41;
+    box-shadow: 0 8px #a67e41, 0 -8px #a67e41;
+    transition: transform 0.3s;
+  }
+
+  [data-menu="button"].active::before {
+    transform: rotate(90deg);
+  }
+
+  /* Transição do ícone de menu no mobile */
+  [data-menu="button"] .icon {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    height: 2px;
+    width: 20px;
+    background-color: #a67e41;
+    box-shadow: 0 8px #a67e41, 0 -8px #a67e41;
+    transition: transform 0.3s;
+  }
+
+  [data-menu="button"].active .icon {
+    transform: rotate(90deg);
+  }
+
+  /* Exibição do menu no mobile */
+  #menu [data-menu="list"] {
+    display: none;
+    position: absolute;
+    justify-content: left;
+    background-color: #fffbf6;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+    padding: 60px 0 20px 25px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #menu [data-menu="list"].active {
+    display: block;
+  }
+
+  /* Itens do menu */
+  #menu [data-menu="list"] .item {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+  }
+
+  #menu [data-menu="list"] .item:first-child {
+    margin-top: 0px;
+  }
+
+  .logo-home {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* Submenu no mobile */
+  .submenu {
+    display: none;
+    position: relative;
+    background: transparent;
+    box-shadow: none;
+    width: 100%; /* Submenu ocupa 100% da largura do menu */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  /* Exibe submenu no clique */
+  .submenu.active {
+    display: block;
+  }
+
+  .submenu li {
+    padding: 10px;
+    margin-left: 30px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .submenu li:last-child {
+    border-bottom: none;
+  }
+
+  /* Ícones do submenu */
+  .submenu img {
+    width: 12px;
+    height: auto;
+    margin-left: 5px;
+  }
+}
+
+/* Desktop: O submenu funciona com hover */
+@media (min-width: 901px) {
+  .item:hover .submenu {
+    display: block;
+  }
+
+  .submenu {
+    width: auto;
+    padding-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
