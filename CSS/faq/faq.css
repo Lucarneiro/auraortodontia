@@ -14,13 +14,6 @@
   height: 90vh;
 }
 
-.box-faq .conteudo-inicial-faq .titulo {
-  font-family: "Poppins";
-  font-size: 8rem;
-  font-weight: 600;
-  color: #7e7f70;
-}
-
 .faq {
   display: grid;
   grid-template-columns: 1fr;
@@ -29,8 +22,10 @@
 
 .intro-faq .texto-intro-faq {
   font-family: "IBM Plex Mono";
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
   font-size: 1.1rem;
   color: #7e7f70;
 }

@@ -14,7 +14,7 @@
 
 .contato .info {
   margin: auto;
-  padding-left: 150px;
+  padding-left: 15vw;
   margin-top: 100px;
 }
 
@@ -48,13 +48,9 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.divContato {
-  margin-left: 90px;
-}
-
 .contato .divContato > .form,
 .divContatointerno > .form {
-  margin-left: 150px;
+  margin-left: 10vw;
 }
 
 .contato .form h2 {
@@ -97,7 +93,6 @@
 .contato .form .btnVerde {
   margin-top: 10px;
   font-size: 1.2rem;
-  margin-left: 0px;
   margin-bottom: 100px;
 }
 

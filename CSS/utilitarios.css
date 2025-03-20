@@ -55,10 +55,11 @@
 .titlePage {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #7e7f50;
   text-align: center;
-  padding-top: 35vh;
+  padding-top: 30vh;
+  margin-top: 10vh;
 }
 
 @media (max-width: 900px) {
