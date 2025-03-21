@@ -1,6 +1,6 @@
 .tratamentos {
   background-color: rgba(245, 237, 224, 0.8);
-  height: 90vh;
+  height: 100vh;
 }
 
 .tratamentos .listaTratamentos {
@@ -41,7 +41,7 @@
 
 @media (max-width: 1300px) {
   .tratamentos {
-    height: 900px;
+    height: 100vh;
   }
 }
 

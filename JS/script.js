@@ -1,11 +1,18 @@
-// function openMenu(event) {
-//   const menuButton = document.querySelector('[data-menu="button"]');
-//   const menuList = document.querySelector('[data-menu="list"]');
-//   menuList.classList.add("active");
-//   menuButton.classList.add("active");
-// }
+//anima-scroll
 
-// menuButton.addEventListener("click", openMenu);
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const elements = document.querySelectorAll(".hidden");
+elements.forEach((element) => {
+  myObserver.observe(element);
+});
 
 //  galeria
 let galleryItems = document.querySelectorAll(".galleryItem");
