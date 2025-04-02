@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   align-content: flex-start;
   align-items: stretch;
-  width: 95%;
+  width: 100%;
   margin: 0px auto;
   margin-bottom: -60px;
 }
@@ -43,7 +43,7 @@
   transition: 0.2s;
 }
 .gallery figcaption {
-  background-color: rgba(245, 237, 224, 0.8);
+  background-color: rgba(245, 237, 224, 0.9);
   color: #7e7f70;
   font-family: "IBM Plex Mono";
   text-transform: uppercase;
@@ -87,8 +87,8 @@
   font-family: "Poppins";
   font-weight: 200;
   border-radius: 50%;
-  height: 0.5em;
-  width: 0.5em;
+  height: 0.3em;
+  width: 0.3em;
   cursor: pointer;
   transition: 0.2s;
 }

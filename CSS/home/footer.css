@@ -7,8 +7,7 @@ footer {
       rgba(203, 164, 116, 0.38) 41%
     ),
     #cba474;
-  padding: 100px;
-  padding-left: 200px;
+  padding: 50px;
   gap: 40px;
 }
 
@@ -41,7 +40,7 @@ footer .infoFooter p {
 footer .sitemap li {
   color: #f7f7f0;
   font-family: "IBM Plex Mono";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 footer .sitemap li .i {

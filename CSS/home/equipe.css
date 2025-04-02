@@ -1,7 +1,6 @@
 .equipe {
   background-color: #fcfbf8;
-  height: 1500px;
-  overflow: hidden;
+  height: 1400px;
 }
 
 .equipe .socios {
@@ -31,8 +30,10 @@
 
 .equipe .imagem1 {
   height: 445px;
+
   border-radius: 3px;
   grid-row: 1;
+  margin: 0 auto;
   margin-left: 130px;
   filter: opacity(70%);
 }
@@ -41,13 +42,13 @@
   background-color: #f5ede0;
   position: relative;
   padding: 100px;
-  height: 600px;
+  height: 340px;
   width: 680px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: -120px;
-  margin-left: 240px;
   border-radius: 3px;
   z-index: 300;
+  overflow-y: scroll;
 }
 
 .equipe .curriculo h2 {
@@ -55,11 +56,11 @@
   font-weight: 200;
   line-height: 1.8rem;
   font-size: 2rem;
-  margin-top: 10px;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   letter-spacing: 0.2rem;
   color: #7e7f70;
+  overflow: hidden;
 }
 
 .equipe .curriculo p {
@@ -68,12 +69,6 @@
   color: #7e7f70;
   line-height: 1.8rem;
   margin-bottom: 50px;
-}
-
-.equipe .curriculo .btnTransp {
-  position: absolute;
-  margin-left: 240px;
-  font-size: 1.2rem;
 }
 
 @media (max-width: 900px) {
